@@ -1,14 +1,16 @@
 {
-    "identityPoolName": "personalblogcc2a5471_identitypool_cc2a5471",
-    "allowUnauthenticatedIdentities": true,
-    "resourceNameTruncated": "personcc2a5471",
-    "userPoolName": "personalblogcc2a5471_userpool_cc2a5471",
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "personalblogc7bac158_identitypool_c7bac158",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "personc7bac158",
+    "userPoolName": "personalblogc7bac158_userpool_c7bac158",
     "autoVerifiedAttributes": [
-        "email"
+      "email"
     ],
     "mfaConfiguration": "OFF",
     "mfaTypes": [
-        "SMS Text Message"
+      "SMS Text Message"
     ],
     "smsAuthenticationMessage": "Your authentication code is {####}",
     "smsVerificationMessage": "Your verification code is {####}",
@@ -18,34 +20,29 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-        "email"
+      "email"
     ],
-    "userpoolClientGenerateSecret": true,
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [
-        "email"
+      "email"
     ],
     "userpoolClientReadAttributes": [
-        "email"
+      "email"
     ],
-    "userpoolClientLambdaRole": "personcc2a5471_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "personc7bac158_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "cc2a5471",
-    "resourceName": "personalblogcc2a5471",
+    "sharedId": "c7bac158",
+    "resourceName": "personalblogc7bac158",
     "authSelections": "identityPoolAndUserPool",
-    "authRoleArn": {
-        "Fn::GetAtt": [
-            "AuthRole",
-            "Arn"
-        ]
-    },
-    "unauthRoleArn": {
-        "Fn::GetAtt": [
-            "UnauthRole",
-            "Arn"
-        ]
-    },
     "useDefault": "default",
+    "usernameAttributes": [
+      "email"
+    ],
     "userPoolGroupList": [],
-    "dependsOn": []
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
+  }
 }

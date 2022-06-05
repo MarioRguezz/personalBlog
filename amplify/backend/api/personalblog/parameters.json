@@ -1,11 +1,11 @@
 {
-    "AppSyncApiName": "personalblog",
-    "DynamoDBBillingMode": "PAY_PER_REQUEST",
-    "DynamoDBEnableServerSideEncryption": false,
-    "AuthCognitoUserPoolId": {
-        "Fn::GetAtt": [
-            "authpersonalblogcc2a5471",
-            "Outputs.UserPoolId"
-        ]
-    }
+  "AppSyncApiName": "personalblog",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authpersonalblogc7bac158",
+      "Outputs.UserPoolId"
+    ]
+  }
 }

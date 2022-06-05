@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "personalblog",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/mario_rguezz/Documents/personalBlog/amplify/backend/api/personalblog/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-06-05T06:41:39.387Z",
+      "keyDescription": ""
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authpersonalblogc7bac158"
+      }
+    ]
+  }
+}

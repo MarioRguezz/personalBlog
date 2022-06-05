@@ -2,7 +2,7 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreatePost = /* GraphQL */ `
-  subscription OnCreatePost($username: String!) {
+  subscription OnCreatePost($username: String) {
     onCreatePost(username: $username) {
       id
       title
@@ -15,7 +15,7 @@ export const onCreatePost = /* GraphQL */ `
   }
 `;
 export const onUpdatePost = /* GraphQL */ `
-  subscription OnUpdatePost($username: String!) {
+  subscription OnUpdatePost($username: String) {
     onUpdatePost(username: $username) {
       id
       title
@@ -28,7 +28,7 @@ export const onUpdatePost = /* GraphQL */ `
   }
 `;
 export const onDeletePost = /* GraphQL */ `
-  subscription OnDeletePost($username: String!) {
+  subscription OnDeletePost($username: String) {
     onDeletePost(username: $username) {
       id
       title
